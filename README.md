@@ -1,5 +1,6 @@
 <div align="center">
-    <img width="160"  src="https://docs.apidoc.icu/logo.png">
+    此包为修改后的包，以适应特定的项目使用。且不会同步来源包代码。
+    在config中原传path实为namespace，保留原path配置，但需传dir真实物理路径。
 </div>
 
 <h1 align="center" style="margin-top: 0;padding-top: 0;">
