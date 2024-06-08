@@ -56,7 +56,7 @@ class ParseApiMenus
             }
         } else if(!empty($currentApp['path']) && is_string($currentApp['path'])){
             // 默认读取path下所有的
-            $controllers = $this->getDirControllers($currentApp['path']);
+            $controllers = $this->getDirControllers($currentApp['dir']);
         }
         $apiData = [];
         if (!empty($controllers) && count($controllers) > 0) {
