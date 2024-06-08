@@ -107,19 +107,8 @@ class ParseApiMenus
      * @param string $path
      * @return array
      */
-    public function getDirControllers(string $path): array
-    {
-
-        if ($path) {
-            if (strpos(APIDOC_ROOT_PATH, '/') !== false) {
-                $pathStr = str_replace("\\", "/", $path);
-            } else {
-                $pathStr = $path;
-            }
-            $dir = APIDOC_ROOT_PATH . $pathStr;
-        } else {
-            $dir = APIDOC_ROOT_PATH . $this->controller_layer;
-        }
+    public function getDirControllers(string $dir): array
+    { 
         $controllers = [];
         if (is_dir($dir)) {
             $controllers = $this->scanDir($dir, $path);
